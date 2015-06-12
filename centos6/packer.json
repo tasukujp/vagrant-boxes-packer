@@ -49,7 +49,7 @@
       "keep_input_artifact": false,
       "override": {
         "virtualbox": {
-          "output": "./centos6/box/CentOS-6.6-x86_64-minimal-ja.box"
+          "output": "./centos6/box/CentOS-6.6-x86_64-minimal-en.box"
         }
       }
     }
