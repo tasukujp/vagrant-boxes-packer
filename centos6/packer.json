@@ -4,8 +4,8 @@
       "type": "virtualbox-iso",
       "vm_name": "centos6",
       "guest_os_type": "RedHat_64",
-      "iso_url": "http://ftp.riken.jp/Linux/centos/6/isos/x86_64/CentOS-6.6-x86_64-minimal.iso",
-      "iso_checksum": "eb3c8be6ab668e6d83a118323a789e6c",
+      "iso_url": "http://ftp.riken.jp/Linux/centos/6/isos/x86_64/CentOS-6.7-x86_64-minimal.iso",
+      "iso_checksum": "9381a24b8bee2fed0c26896141a64b69",
       "iso_checksum_type": "md5",
       "ssh_username": "vagrant",
       "ssh_password": "vagrant",
@@ -29,7 +29,7 @@
   "provisioners": [
     {
       "type": "shell",
-      "execute_command": "echo 'vagrant'|sudo -S sh '{{.Path}}'",
+      "execute_command": "echo 'vagrant' | sudo -S sh '{{.Path}}'",
       "override": {
         "virtualbox-iso": {
           "scripts": [
@@ -49,7 +49,7 @@
       "keep_input_artifact": false,
       "override": {
         "virtualbox": {
-          "output": "./centos6/box/CentOS-6.6-x86_64-minimal-en.box"
+          "output": "./centos6/artifact/CentOS-6.7-x86_64-minimal-en.box"
         }
       }
     }
